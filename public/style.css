@@ -1,0 +1,350 @@
+/*body {
+  background: rgb(62,81,81);
+  background: linear-gradient(0deg, rgba(62,81,81,1) 0%, rgba(222,203,164,1) 100%);
+  font-family: 'Edu SA Beginner', cursive;
+}
+body {
+  background: rgb(62,81,81);
+  background: linear-gradient(0deg, rgba(62,81,81,1) 0%, rgba(222,203,164,1) 100%);
+  font-family: 'Edu SA Beginner', sans-serif;
+  margin: 0;
+  padding: 0;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#form1 {
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+}
+
+#form1 h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#form1 label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#form1 input[type="text"],
+#form1 textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  padding-right: 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #333;
+}
+
+#post-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#post-btn:hover {
+  background-color: #0056b3;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 300px;
+  width: 90%;
+  text-align: center;
+  z-index: 1;
+}
+
+.popup h2 {
+  margin-bottom: 10px;
+}
+
+.popup p {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  #form1 {
+      max-width: 90%;
+  }
+
+  .popup {
+      max-width: 90%;
+  }
+}
+
+#displayPosts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+
+.post-div {
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+
+}
+
+.post-h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.post-p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.post-edit,
+.post-del {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.post-del {
+  background-color: #dc3545;
+}
+
+.post-edit:hover,
+.post-del:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+  .post-div {
+      max-width: 90%;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.edit-title,
+.edit-textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.save {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.save:hover {
+  background-color: #0056b3;
+}*/
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p, form {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  background: linear-gradient(45deg, #3498db, #2c3e50);
+  font-family: 'Edu SA Beginner', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #ffffff;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+}
+
+/* Form styles */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #333;
+}
+
+#post-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #27ae60;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#post-btn:hover {
+  background-color: #219951;
+}
+
+/* Popup styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 300px;
+  width: 90%;
+  text-align: center;
+  z-index: 1;
+}
+
+.popup h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.popup p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Display posts styles */
+#displayPosts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+
+.post-div {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.post-h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.post-p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.post-edit,
+.post-del {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.post-edit {
+  background-color: #3498db;
+}
+
+.post-del {
+  background-color: #e74c3c;
+}
+
+.post-edit:hover,
+.post-del:hover {
+  background-color: #2980b9;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+  .container,
+  .popup,
+  .post-div {
+    max-width: 90%;
+  }
+}
